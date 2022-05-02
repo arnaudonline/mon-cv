@@ -1,0 +1,117 @@
+/* DARK MODE BUTTON */
+.dark_button {
+  display: block;
+  cursor: pointer;
+  border: 1px solid #000;
+  border-radius: 50px;
+  padding: 5px 8px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  width: fit-content;
+}
+
+.dark_button:before {
+  content: 'Dark Mode';
+}
+
+.dark_mode .dark_button {
+  border-color: #fff;
+}
+
+.dark_mode .dark_button::before {
+  content: 'Light Mode';
+}
+
+/* FONT */
+.dark_mode a,
+.dark_mode p,
+.dark_mode h1,
+.dark_mode h2,
+.dark_mode h3,
+.dark_mode h4,
+.dark_mode h5,
+.dark_mode h6 {
+  color: #fff;
+}
+
+.dark_mode .title:after {
+  background-color: #fff;
+}
+
+/* BACKGROUND */
+body.dark_mode {
+  background-color: #000000;
+}
+
+/* HEADER */
+.dark_mode header {
+  background-color: #161a1d;
+  border-bottom-color: #f5f5f5;
+}
+
+/* BUTTON */
+.dark_mode .primary_button {
+  color: #000;
+  border: 2px solid #fff;
+}
+
+.dark_mode .primary_button::before {
+  background-color: #fff;
+}
+
+.dark_mode .primary_button:hover {
+  color: #fff;
+}
+
+.dark_mode .secondary_button {
+  border: 2px solid #fff;
+  color: #fff;
+}
+
+.dark_mode .secondary_button::before {
+  background-color: #fff;
+}
+
+.dark_mode .secondary_button:hover {
+  color: #000;
+}
+
+/* QUI SUIS-JE */
+.dark_mode #quisuis_je {
+  background: #161a1d;
+}
+
+/* FORMATIONS */
+.dark_mode #formations {
+  background: #161a1d;
+}
+
+.dark_mode .course_title:before {
+  background: #fff;
+}
+
+/* SKILLS  */
+.dark_mode .skill_box p {
+  border-color: #fff;
+}
+
+/* CONTACTEZ-MOI */
+.dark_mode input,
+.dark_mode textarea {
+  border-color: #fff;
+}
+
+.dark_mode .rgpd {
+  color: #fff;
+}
+
+.dark_mode #submit {
+  border-color: #fff;
+  background-color: #fff;
+  color: #000;
+}
+
+.dark_mode #submit:hover {
+  background-color: #000;
+  color: #fff;
+}

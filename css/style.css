@@ -1,0 +1,511 @@
+@charset "utf-8";
+header,
+section,
+footer,
+aside,
+nav,
+main,
+article,
+figure {
+  display: block;
+}
+
+div,
+header,
+nav,
+article,
+section,
+aside,
+footer,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+ul,
+li,
+figure,
+figcaption,
+class,
+img {
+  margin: 0;
+  padding: 0;
+}
+* {
+  box-sizing: border-box;
+}
+*:before,
+:after {
+  content: "";
+}
+html,
+body {
+  height: auto;
+  background-color: #f6f6f7;
+  border: 0 solid transparent;
+  margin: 0;
+  min-height: 100%;
+  padding: 0;
+  width: 100%;
+  display: block;
+  font-family: sculpin, sans-serif;
+}
+
+input,
+textarea {
+  font-family: sculpin, sans-serif;
+  font-size: 1rem;
+}
+
+img,
+object,
+embed,
+canvas,
+video,
+audio,
+picture {
+  max-width: 100%;
+  height: auto;
+}
+img {
+  display: block;
+}
+a {
+  color: #000;
+  text-decoration: none;
+  transition: all 0.5s;
+}
+/*-----------------------------------------------------------------RECCURENTES --*/
+.clear {
+  clear: both;
+}
+.container {
+  width: 100%;
+  padding: 3.5rem 1.5rem;
+  margin: 0 auto;
+}
+
+p {
+  font-size: 1rem;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 1.8rem;
+}
+
+.title:after {
+  content: "";
+  display: block;
+  height: 5px;
+  width: 70px;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  background: #000;
+}
+
+p {
+  line-height: 21px;
+}
+/*--------------------------------------------------------------FIN RECCURENTES --*/
+
+header {
+  position: sticky;
+  top: 0;
+  height: 50px;
+  border-bottom: 1px solid #c1bfbe;
+  background: #f6f6f7;
+  width: 100%;
+  z-index: 99;
+}
+
+#home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+}
+
+.menu {
+  font-weight: 700;
+}
+
+.intro img {
+  height: 100%;
+  width: 200px;
+  margin-bottom: 1.2rem;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.infos {
+  padding: 1rem 0;
+}
+
+.infos p {
+  font-size: 1.2rem;
+}
+
+.infos h1 {
+  font-size: 1.5rem;
+  padding: 1rem 0;
+}
+
+.intro_button {
+  padding: 1rem 0 0;
+}
+
+.primary_button {
+  display: block;
+  position: relative;
+  padding: 8px 25px;
+  font-weight: 700;
+  color: #fff;
+  border: 2px solid #000;
+  width: fit-content;
+  margin-bottom: 0.8rem;
+  transition: 0.3s all ease;
+  z-index: 1;
+}
+
+.primary_button::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  height: 100%;
+  width: 100%;
+  transition: 0.3s all ease;
+  background-color: #000;
+  z-index: -1;
+}
+
+.primary_button:hover::before {
+  height: 0%;
+}
+
+.primary_button:hover {
+  color: #000;
+}
+
+.secondary_button {
+  display: block;
+  position: relative;
+  padding: 11px 25px;
+  font-weight: 700;
+  border: 2px solid #000;
+  color: #000;
+  width: fit-content;
+  margin-bottom: 0.8rem;
+  transition: 0.3s all ease;
+  z-index: 1;
+}
+
+.secondary_button::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  height: 0%;
+  width: 100%;
+  transition: 0.3s all ease;
+  background-color: #000;
+  z-index: -1;
+}
+
+.secondary_button:hover::before {
+  height: 100%;
+}
+
+.secondary_button:hover {
+  color: #fff;
+}
+
+/* QUI SUIS JE */
+#quisuis_je {
+  background: white;
+}
+
+/* JOBS */
+.job_box {
+  padding: 2rem 0;
+  border-bottom: 1px solid #c1bfbe;
+}
+
+.job_box:last-child {
+  padding: 2rem 0 0;
+  border-bottom: none;
+}
+
+.job_company {
+  font-size: 1.5rem;
+  font-weight: 700;
+  padding-bottom: 1.2rem;
+}
+
+.job_title {
+  font-size: 1.2rem;
+  font-weight: 500;
+  padding-bottom: 1rem;
+}
+
+.job_date {
+  font-size: 1rem;
+  padding-bottom: 1rem;
+}
+
+.job_date span {
+  opacity: 0.5;
+}
+
+/* FORMATION */
+#formations {
+  background: #fff;
+}
+
+.courses {
+  padding-top: 2rem;
+}
+
+.course_box {
+  position: relative;
+  border-left: 1px solid #c1bfbe;
+  padding-left: 1rem;
+  padding-bottom: 2.8rem;
+}
+
+.course_box:last-child {
+  padding-bottom: 0.2rem;
+}
+
+.course_title:before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 0px;
+  left: -5px;
+  height: 8px;
+  width: 8px;
+  background: #000;
+  border-radius: 100%;
+}
+
+.course_title {
+  font-size: 1.2rem;
+  font-weight: 500;
+  padding-bottom: 0.5rem;
+}
+
+.course_date {
+  font-size: 1rem;
+  padding-bottom: 0.4rem;
+}
+
+.course_place {
+  font-size: 1rem;
+  opacity: 0.5;
+}
+
+/* SKILLS */
+.skill_box {
+  padding: 0.8rem 0;
+}
+
+.skill_box:last-child {
+  padding: 0.8rem 0 0;
+}
+
+.skill_box p {
+  border: 1px solid #000;
+  width: fit-content;
+  padding: 5px 10px;
+  margin-bottom: 10px;
+}
+
+p.skill_title {
+  font-size: 1.2rem;
+  font-weight: 500;
+  padding: 0 0 0.5rem;
+  border: 0;
+}
+
+/* CONTACT */
+#contact {
+  border-top: 1px solid #c1bfbe;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  font-weight: 500;
+  padding: 0 0 0.8rem;
+  border: 0;
+}
+
+.details {
+  padding: 1.5rem 0;
+}
+
+.details p {
+  padding-bottom: 0.8rem;
+}
+
+input,
+textarea {
+  display: block;
+  border: 1px solid #000;
+  background-color: transparent;
+  padding: 10px 10px;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+input[type="submit"] {
+  display: block;
+  position: relative;
+  padding: 10px 25px;
+  font-weight: 700;
+  color: #fff;
+  background: #000;
+  border: 2px solid transparent;
+  margin-bottom: 0.8rem;
+  cursor: pointer;
+  transition: 0.3s all ease;
+}
+
+#submit:hover {
+  color: #000;
+  border: 2px solid #000;
+  background: transparent;
+}
+
+input:focus,
+textarea:focus {
+  background: #fff;
+}
+
+.rgpd {
+  display: flex;
+  margin: 1rem 0;
+}
+
+.rgpd input {
+  width: fit-content;
+}
+
+input[type="checkbox"] {
+  display: block;
+  border: 1px solid #000;
+  height: 20px;
+  width: 20px;
+  margin-right: 5px;
+}
+
+/* FOOTER */
+footer {
+  border-top: 1px solid #c1bfbe;
+  padding: 1rem 0;
+}
+
+footer p {
+  font-size: 0.8rem;
+  text-align: center;
+  opacity: 0.5;
+}
+
+@media screen and (min-width: 760px) {
+  .container {
+    width: 900px;
+  }
+
+  #home {
+    height: 70vh;
+  }
+
+  /* INTRO */
+  .intro {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .intro img {
+    width: 280px;
+  }
+
+  .intro .infos {
+    padding: 0.5rem 2.5rem;
+  }
+
+  /* QUI SUIS-JE */
+  #quisuis_je {
+    padding: 3.5rem;
+  }
+
+  #quisuis_je .title {
+    text-align: center;
+    padding-bottom: 1rem;
+  }
+
+  #quisuis_je .title:after {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #quisuis_je p {
+    text-align: center;
+  }
+
+  /* JOBS */
+  #experiences {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  #experiences .title {
+    width: 30%;
+    position: sticky;
+    top: 80px;
+    height: fit-content;
+  }
+
+  .jobs {
+    width: 70%;
+  }
+
+  .job_box:first-child {
+    padding-top: 0.5rem;
+  }
+
+  /* FORMATIONS */
+  #formations {
+    padding: 3.5rem;
+  }
+
+  /* SKILLS */
+  .skills {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  /* CONTACTEZ-MOI */
+  .contact_mode {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  input[type="checkbox"] {
+    margin-top: 0;
+  }
+
+  /* THANKS YOU PAGE */
+  #thanks {
+    height: 90vh;
+  }
+
+  #thanks a {
+    margin-top: 2rem;
+  }
+}
